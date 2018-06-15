@@ -1,5 +1,6 @@
-![uffbasse](./logo.svg)
+![uffbasse](logo.svg)
 
+# uffbasse
 #### Bouncing async/await wrapper for smart error handling
 
 
