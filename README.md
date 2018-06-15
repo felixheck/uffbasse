@@ -3,7 +3,7 @@
 #### Bouncing async/await wrapper for smart error handling
 
 
-[![Travis](https://img.shields.io/travis/felixheck/uffbasse.svg)](https://travis-ci.org/felixheck/uffbasse/builds/) ![node](https://img.shields.io/node/v/uffbasse.svg) ![npm](https://img.shields.io/npm/dt/uffbasse.svg) [![standard](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](http://standardjs.com/) ![npm](https://img.shields.io/npm/l/uffbasse.svg) [![Coverage Status](https://coveralls.io/repos/github/felixheck/uffbasse/badge.svg?branch=master)](https://coveralls.io/github/felixheck/uffbasse?branch=master)
+[![Travis](https://img.shields.io/travis/felixheck/uffbasse.svg)](https://travis-ci.org/felixheck/uffbasse/builds/) ![node](https://img.shields.io/node/v/uffbasse.svg) ![npm](https://img.shields.io/npm/dt/uffbasse.svg) [![standard](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](http://standardjs.com/) ![npm](https://img.shields.io/npm/l/uffbasse.svg)
 ---
 
 1. [Introduction](#introduction)
