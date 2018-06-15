@@ -117,7 +117,7 @@ Optional.
 
   - `defaults {*}`: Default value to be returned if it is a non-matching error.  
   Optional. Default: `undefined`.
-  - `log {Function}`: Function utilized to log non-matching errors.  
+  - `log {null|Function}`: Function utilized to log non-matching errors. If `null`, logging is disabled.
   Optional. Default: `console.error`.
   - `is {Function}`: Function utilized to distinct between error types.  
   Optional. Default: [`bounce.isSystem`](https://github.com/hapijs/bounce).

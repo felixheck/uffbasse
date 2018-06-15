@@ -23,5 +23,5 @@ const bounce = require('bounce')
 module.exports = (promise, { defaults = undefined, log = console.error, is = bounce.isSystem } = {}) => (
   promise
     .then(data => [null, data])
-    .catch(err => is(err) ? [err, undefined] : (log(err), [null, defaults]))
+    .catch(err => is(err) ? [err, undefined] : (log && log(err), [null, defaults]))
 )

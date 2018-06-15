@@ -99,3 +99,16 @@ test('return default with custom log when rejected – non-matching: bounce.isSy
   t.truthy(spy.calledWith(testError))
   spy.restore()
 })
+
+test('do not log if disabled', async (t) => {
+  const testError = new Error('foobar')
+  const promise = Promise.reject(testError)
+  const spy = sinon.spy(console, 'error')
+
+  const [err, data] = await to(promise, { log: null })
+
+  t.is(err, null)
+  t.is(data, undefined)
+  t.falsy(spy.calledOnce)
+  spy.restore()
+})
