@@ -55,6 +55,11 @@ const failedNonMatched = Promise.reject(new Error('foobar'));
   await to(failedMatched);
   // returns: ['SyntaxError: foobar', undefined]
 
+  const [err, res] = await to(failedMatched);
+  if (err) throw err;
+  // returns: ['SyntaxError: foobar', undefined]
+  // throws:   'SyntaxError: foobar'
+
   await to(failedNonMatched);
   // logs: foobar
   // returns: [null, undefined]
