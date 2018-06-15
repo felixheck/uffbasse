@@ -1,0 +1,50 @@
+{
+  "name": "uffbasse",
+  "description": "Bouncing async/await wrapper for smart error handling",
+  "keywords": [
+    "node",
+    "async",
+    "await",
+    "async await",
+    "bounce",
+    "rethrow",
+    "log"
+  ],
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": {
+    "name": "Felix Heck",
+    "email": "hi@whotheheck.de",
+    "url": "http://whotheheck.de"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/felixheck/uffbasse.git"
+  },
+  "bugs": {
+    "email": "hi@whotheheck.com",
+    "url": "https://github.com/felixheck/uffbasse/issues"
+  },
+  "main": "./index.js",
+  "scripts": {
+    "start": "npm test -- -w",
+    "lint": "standard",
+    "test": "nyc --check-coverage --lines 80 ava -s --timeout=30s",
+    "coverage": "nyc report --reporter=lcov"
+  },
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "boom": "^7.2.0",
+    "fixture-stdout": "^0.2.1",
+    "nyc": "^11.7.2",
+    "sinon": "^6.0.0",
+    "standard": "^11.0.1"
+  },
+  "dependencies": {
+    "bounce": "^1.2.0"
+  },
+  "engines": {
+    "node": ">= 8.9.1",
+    "npm": ">= 5"
+  }
+}
