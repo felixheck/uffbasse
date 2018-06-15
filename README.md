@@ -18,7 +18,7 @@
 
 ## Introduction
 **uffbasse** is an enhanced async/await wrapper for smart error handling and is based on the articles [Learning to Throw Again](https://hueniverse.com/learning-to-throw-again-79b498504d28) and 
-[How to write async await without try-catch blocks in Javascript](https://blog.grossman.io/how-to-write-async-await-without-try-catch-blocks-in-javascript/). So it returns a `[err, result]` array quite similar to the error-first callbacks. Like described in the articles using async/await both run-time and developer errors are merged into one single channel. **uffbasse** enables to differ between types of errors and behave based on this distinction. There a basically there behaviours:
+[How to write async await without try-catch blocks in Javascript](https://blog.grossman.io/how-to-write-async-await-without-try-catch-blocks-in-javascript/). So it returns a `[err, result]` array quite similar to the error-first callbacks. Like described in the articles using async/await both run-time and developer errors are merged into one single channel. **uffbasse** enables to differ between types of errors and behave based on this distinction. There are basically three behaviours:
 
 1. promise resolves  
 returns `[null, result]`
