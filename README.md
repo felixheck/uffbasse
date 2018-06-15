@@ -87,7 +87,7 @@ Optional.
   - `is {Function}`: Function utilized to distinct between error types.  
   Optional. Default: [`bounce.isSystem`](https://github.com/hapijs/bounce).
 
-By default is just return run-time errors.  
+By default it just returns run-time errors.  
 Errors due to developers are logged with `console.error`.
 
 ## Developing and Testing
