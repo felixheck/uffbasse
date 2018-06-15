@@ -79,7 +79,7 @@ Optional.
   - `log {Function}`: Function utilized to log non-matching errors.  
   Optional. Default: `console.error`.
   - `is {Function}`: Function utilized to distinct between error types.  
-  Optional. Default: [`bounce`](https://github.com/hapijs/bounce)`.isSystem`.
+  Optional. Default: [`bounce.isSystem`](https://github.com/hapijs/bounce).
 
 By default is just return run-time errors.  
 Errors due to developers are logged with `console.error`.
