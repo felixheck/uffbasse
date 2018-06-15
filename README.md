@@ -23,7 +23,7 @@
 returns `[null, result]`
 2. promise rejects with a matching error  
 returns `[err, undefined]`
-3. promise reject with a non-matching error  
+3. promise rejects with a non-matching error  
 returns `[err, defaultResult]` and logs the error
 
 The modules [`standard`](https://standardjs.com/) and [`ava`](https://github.com/avajs/ava) are used to grant a high quality implementation.<br/>
