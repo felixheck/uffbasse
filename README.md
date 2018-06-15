@@ -42,6 +42,7 @@ $ git clone https://github.com/felixheck/uffbasse
 ```
 
 ## Example
+#### With uffbasse
 ``` js
 const to = require('uffbasse');
 
@@ -68,6 +69,40 @@ const failedNonMatched = Promise.reject(new Error('foobar'));
   await to(failedNonMatched, { defaults: {} });
   // logs: foobar
   // returns: [null, {}]
+})();
+```
+#### Without uffbasse
+``` js
+const bounce = require('bounce');
+
+const succeeded = Promise.resolve({ test: 123 });
+const failedMatched = Promise.reject(new SyntaxError('foobar'));
+const failedNonMatched = Promise.reject(new Error('foobar'));
+
+(async () => {
+  let res;
+
+  try {
+    res = await succeeded;
+  } catch(err) {
+    bounce.rethrow(err, 'system');
+    console.error(err);
+  }
+
+  try {
+    res = await failedMatched;
+  } catch(err) {
+    bounce.rethrow(err, 'system');
+    console.error(err);
+  }
+
+  try {
+    res = await failedNonMatched;
+  } catch(err) {
+    bounce.rethrow(err, 'system');
+    console.error(err);
+    res = {}
+  }
 })();
 ```
 
